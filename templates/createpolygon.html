@@ -44,7 +44,7 @@
     }
 
     document.body.removeChild(textArea);
-    }
+  }
   function copyTextToClipboard(text) {
     if (!navigator.clipboard) {
         fallbackCopyTextToClipboard(text);
@@ -52,7 +52,7 @@
     }
     navigator.clipboard.writeText(text).then(function() {
         console.log('Async: Copying to clipboard was successful!');
-    }, function(err) {
+        }, function(err) {
         console.error('Async: Could not copy text: ', err);
     });
   }
@@ -212,8 +212,8 @@ kakao.maps.event.addListener(map, 'rightclick', function (mouseEvent) {
             });      
 
 
-			var shp = {};
-			shp['type'] = 'Polygon';
+            var shp = {};
+            shp['type'] = 'Polygon';
             shp['coordinates'] = [[]]
             
             for (var i in path){
@@ -225,7 +225,7 @@ kakao.maps.event.addListener(map, 'rightclick', function (mouseEvent) {
             var lat = path[0].getLng();
             shp['coordinates'][0].push([lng, lat]);
 
-			document.getElementById("geop").innerHTML = JSON.stringify(shp);
+            document.getElementById("geop").innerHTML = JSON.stringify(shp);
 
              
         } else { 
