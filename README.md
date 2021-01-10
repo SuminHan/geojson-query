@@ -11,4 +11,8 @@ Run Flask app by:
 
     python flaskapp.py
 
-refer: https://apis.map.kakao.com/web/sample/calculatePolygonArea/
+## Reference
+
+
+* Kakao API: https://apis.map.kakao.com/web/sample/calculatePolygonArea/
+* My Blog: https://csds.tistory.com/22
