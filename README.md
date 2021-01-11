@@ -4,7 +4,7 @@
 
 A useful web application to create GeoJSON format polygon for specific region on the map.
 
-myconstants.py may looks like:
+**myconstants.py** may looks like:
 
     host = "localhost"
     appkey = "kakao-web-api"
